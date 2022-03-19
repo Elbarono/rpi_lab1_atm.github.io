@@ -2,72 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel ="stylesheet" href = "stylesheet.css">
+    <link rel ="stylesheet" href = "/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Title</title>
 </head>
 <body>
+<div id="content">
 <header>
     <div class="menu">
         <div class="logo_img">
-            <a><img src="index.html" alt="Logo"></a>
+            <a href="#"><img src="index.html" alt="Logo"></a>
         </div>
         <div class="first_menu">
-            <a>Sell</a>
-            <a>Registry</a>
-            <a>Community</a>
-            <a>Blogs</a>
-            <a>Mobile</a>
-            <a>Gift Cards</a>
+            <a href="#">Sell</a>
+            <a href="#">Registry</a>
+            <a href="#">Community</a>
+            <a href="#">Blogs</a>
+            <a href="#">Mobile</a>
+            <a href="#">Gift Cards</a>
         </div>
         <div class="second_menu">
-            <a>Register</a>
-            <a>Sign in</a>
-            <a>Whislost</a>
-            <a>Cart</a>
+            <a href="#">Register</a>
+            <a href="#">Sign in</a>
+            <a href="#">Whislost</a>
+            <a href="#">Cart</a>
         </div>
     </div>
     <nav class="navigation">
-        <a>Art</a>
-        <a>Home & Living</a>
-        <a>Jewelry</a>
-        <a>Women</a>
-        <a>Men</a>
-        <a>Kids</a>
-        <a>Vintage</a>
-        <a>Weddings</a>
-        <a>More</a>
+        <ul class = "nav_buttons">
+            <li><a href="#">Art</a></li>
+            <li><a href="#">Home & Living</a></li>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Vintage</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
     </nav>
 </header>
 <div class="navigation_img">
     <div class = "slider">
         <div class="left-col">
-            <div class= "men" >
+            <div class="men">
                 <img src="/images/men.png" alt="Men's wear">
+            </div>
+            <div class="search">
+                <form class = "search_form">
+                    <input class="search_inp" type="text" placeholder="Search your product here (e.g.:Silver diamond ring)" value>
+                    <input class="search_button" type="image" src="/images/magnifying_glass.png" alt="Search">
+                </form>
+            </div>
+            <div class ="crafts">
+                <img src="/images/crafts.png" alt="Crafts">
             </div>
         </div>
         <div class="right-col">
             <div class = "women">
-                <img src="https://elbarono.github.io/rpi_lab1_atm.github.io/images/women.png" alt="Women's wear">
+                <img src="/images/women.png" alt="Women's wear">
             </div>
             <div class = "kids">
-                <img src="https://elbarono.github.io/rpi_lab1_atm.github.io/images/kids.png" alt="Baby shop">
+                <img src="/images/kids1.png" alt="Baby shop">
+            </div>
+
+            <div class="jewelry">
+                <img src="/images/jewelry.png" alt="Jewelry">
             </div>
         </div>
-    </div>
-    <div class="left-col">
-        <div class ="crafts">
-            <img src="https://elbarono.github.io/rpi_lab1_atm.github.io/images/crafts.png" alt="Crafts">
-        </div>
-        <div class="search">
-            <form class = "search-form">
-                <input class="search-inp" type="text" placeholder="Search your product here (e.g.:Silver diamond ring)" value>
-                <img src="" alt="Search">
-            </form>
-        </div>
-    </div>
-    </div>
-    <div class="right-col">
-        <img src="https://elbarono.github.io/rpi_lab1_atm.github.io/images/jewelry.png" alt="Jewelry">
     </div>
 </div>
 <div class="new_products">
@@ -198,8 +202,6 @@
         <div class="subscribe">
             <h2 class = "footer_tittle">SIGNUP NEWSLETTER</h2>
             <div class="footer_signup">
-
-
                 <div>
                     E.G.ABC@DOMAIN.COM
                 </div>
@@ -210,6 +212,7 @@
             <h2 class = "footer_tittle">KEEP IN TOUCH</h2>
             <div class="footer_social">
                 <a href = "https://www.facebook.com/" target ="_blank">
+
                 </a>
             </div>
         </div>
@@ -225,5 +228,6 @@
     </div>
     <hr>
 </footer>
+</div>
 </body>
 </html>
