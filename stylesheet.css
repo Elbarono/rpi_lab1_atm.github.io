@@ -113,3 +113,199 @@ a {
     display: flex;
     flex-direction: column;
 }
+/*стили Тани начало*/
+.new-products {
+    margin: 15px;
+    position: relative;
+}
+.featured-products {
+    margin: 15px;
+}
+.new-products-images {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+}
+.new-products-center-image {
+    position: relative;
+}
+.featured-products-images {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+}
+.products-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    margin-bottom: 30px;
+}
+.products-header-text {
+    display: flex;
+    align-self: flex-end;
+    color: #05aecc;
+    padding: 0 20px 10px 0;
+    margin-left: 30px;
+    border-bottom: #f0626e;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 30px;
+    /* font-family: 'Lato', sans-serif;*/
+}
+.products-header-arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 141px;
+}
+.new-products-header-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 80px;
+    background-color: #3c3c3c;
+}
+.new-products-header-arrow:hover {
+    background-color: #05aecc;
+}
+.featured-products-header-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 80px;
+    background-color: #3c3c3c;
+}
+.featured-products-header-arrow:hover {
+    background-color: #f0626e;
+}
+.buttons-baby-shop {
+    display: flex;
+    height: 55px;
+    color: white;
+    align-items: stretch;
+    justify-content: center;
+    position: absolute;
+    top: 75px;
+    left: 40px;
+}
+i, buttons-baby-shop{
+    font-size: 25px;
+}
+.buttons-text {
+    display: flex;
+    align-items: center;
+    background-color: #05aecc;
+    padding: 0 15px;
+}
+.buttons-gift {
+    display: flex;
+    align-items: center;
+    background-color: #00A1BE;
+    padding: 0 15px;
+}
+.buttons-cart {
+    display: flex;
+    align-items: center;
+    background-color: #f0626e;
+    padding: 0 15px;
+}
+.buttons-price {
+    display: flex;
+    align-items: center;
+    background-color: #3c3c3c;
+    padding: 0 15px;
+}
+i {
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    /*color: white;*/
+    font-style: normal;
+}
+.product-icons{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 50px;
+}
+.product-icon{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    color: #b9b9b9;
+    border-style: solid;
+    border-color: #b9b9b9;
+    border-width: 0 1px 0 0;
+}
+.product-icon-price{
+    width: 105px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-grow: 1;
+}
+.product-inf{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    border-style: solid;
+    border-color: #b9b9b9;
+    border-width: 1px;
+    background-color: white;
+}
+.product-description{
+    padding: 10px;
+    font-size: 18px;
+    border-style: solid;
+    border-color: #b9b9b9;
+    border-width: 0 0 1px 0;
+}
+.product-description-title{
+    letter-spacing: 1px;
+}
+.product-description-text{
+    font-size: 0.8em;
+}
+.featured-products-image-blue .product-description-text{
+    color: #05aecc;
+}
+.featured-products-image-red .product-description-text{
+    color: #f0626e;
+}
+.featured-products-image-red .product-icon-price{
+    background-color: #f0626e;
+}
+.featured-products-image-blue .product-icon-price{
+    background-color: #05aecc;
+}
+.product-icon i{
+    font-size: 15px;
+}
+.featured-products-image-red{
+    position: relative;
+    border-style: solid;
+    border-color: #b9b9b9;
+    border-width: 1px;
+}
+.featured-products-image-blue{
+     position: relative;
+     border-style: solid;
+     border-color: #b9b9b9;
+     border-width: 1px;
+ }
+.featured-products-images{
+    height: 401px;
+}
+.line{
+    position: absolute;
+    bottom: 30px;
+    border-style: solid;
+    border-color: #b9b9b9;
+    border-width: 1px 0 0 0;
+}
+/*Стили Тани конец*/
