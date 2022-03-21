@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 ul {
@@ -136,6 +137,7 @@ a {
 }
 .products-header {
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     height: 80px;
@@ -190,7 +192,7 @@ a {
     top: 75px;
     left: 40px;
 }
-i, buttons-baby-shop{
+.buttons-baby-shop i{
     font-size: 25px;
 }
 .buttons-text {
@@ -199,17 +201,29 @@ i, buttons-baby-shop{
     background-color: #05aecc;
     padding: 0 15px;
 }
+.buttons-text:hover{
+    background-color: white;
+    color: #f0626e;
+}
 .buttons-gift {
     display: flex;
     align-items: center;
     background-color: #00A1BE;
     padding: 0 15px;
 }
+.buttons-gift:hover{
+    background-color: white;
+    color: #00A1BE;
+}
 .buttons-cart {
     display: flex;
     align-items: center;
     background-color: #f0626e;
     padding: 0 15px;
+}
+.buttons-cart:hover{
+    background-color: white;
+    color: #f0626e;
 }
 .buttons-price {
     display: flex;
@@ -230,7 +244,6 @@ i {
 }
 .product-icon{
     display: flex;
-    flex-grow: 1;
     justify-content: center;
     align-items: center;
     width: 55px;
@@ -239,23 +252,24 @@ i {
     border-color: #b9b9b9;
     border-width: 0 1px 0 0;
 }
+.product-icon:hover{
+    color: white;
+    background-color: #b9b9b9;
+}
 .product-icon-price{
-    width: 105px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 105px;
     color: white;
-    display: flex;
     flex-grow: 1;
 }
 .product-inf{
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: -1px;
-    bottom: -1px;
-    border-style: solid;
-    border-color: #b9b9b9;
-    border-width: 1px;
+    left: 0;
+    bottom: 0;
     background-color: white;
 }
 .product-description{
@@ -263,7 +277,7 @@ i {
     font-size: 18px;
     border-style: solid;
     border-color: #b9b9b9;
-    border-width: 0 0 1px 0;
+    border-width: 1px 0;
 }
 .product-description-title{
     letter-spacing: 1px;
@@ -271,41 +285,61 @@ i {
 .product-description-text{
     font-size: 0.8em;
 }
-.featured-products-image-blue .product-description-text{
+.blue .product-description-text{
     color: #05aecc;
 }
-.featured-products-image-red .product-description-text{
+.red .product-description-text{
     color: #f0626e;
 }
-.featured-products-image-red .product-icon-price{
+.red .product-icon-price{
     background-color: #f0626e;
 }
-.featured-products-image-blue .product-icon-price{
+.blue .product-icon-price{
     background-color: #05aecc;
 }
 .product-icon i{
     font-size: 15px;
 }
-.featured-products-image-red{
+.featured-products-image{
     position: relative;
     border-style: solid;
     border-color: #b9b9b9;
     border-width: 1px;
 }
-.featured-products-image-blue{
-     position: relative;
-     border-style: solid;
-     border-color: #b9b9b9;
-     border-width: 1px;
- }
-.featured-products-images{
-    height: 401px;
-}
 .line{
     position: absolute;
-    bottom: 30px;
+    bottom: 0;
+    z-index: -1;
     border-style: solid;
     border-color: #b9b9b9;
     border-width: 1px 0 0 0;
+    width: 1170px;
+}
+.dollar-sign{
+    letter-spacing: 3px;
+}
+.dollar{
+    font-size: 20px;
+}
+.cents{
+    font-size: 12px;
+    position: relative;
+    top: -0.4em;
+}
+.note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    height: 35px;
+    width: 80px;
+    color: white;
+}
+.red-note{
+    background-color: #f0626e;
+}
+.blue-note{
+    background-color: #05aecc;
 }
 /*Стили Тани конец*/
