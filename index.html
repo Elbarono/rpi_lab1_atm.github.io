@@ -11,70 +11,154 @@
 </head>
 <body>
 <div id="content">
-<header>
+    <!-- начало первой части Ани-->
+<header class="header">
     <div class="menu">
-        <div class="logo_img">
-            <a href="#"><img src="index.html" alt="Logo"></a>
+        <div class="top-container">
+            <div class="logo_img">
+                <a href="#">
+                    <img src="/images/logo_no_copy.png" alt="Logo" title="gift shop">
+                    <div class="copyright_logo">
+                        <span>copyright logo</span>
+                    </div>
+                </a>
+            </div>
+            <div class="top-bars">
+                <div class="top">
+                    <ul class="first_menu">
+                        <li><a href="#" title="Sell">Sell</a></li>
+                        <li><a href="#" title="Registry">Registry</a></li>
+                        <li><a href="#" title="Community">Community</a></li>
+                        <li><a href="#" title="Blogs">Blogs</a></li>
+                        <li><a href="#" title="Mobile">Mobile</a></li>
+                        <li><a href="#" title="Gift Cards">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="lower">
+                    <ul class="second_menu">
+                        <li><a href="#" title="Register">Register</a></li>
+                        <li><a href="#" title="Sign In">Sign In</a></li>
+                        <li class = "bar-img"><a href="#" title="Go to whislost">
+                                Whislost <i class="fa-solid fa-gift fa-lg"></i>
+                            </a></li>
+                        <li class="bar-img">
+                            <a href="#" title="Show cart">
+                                Cart <i class="fa-solid fa-shopping-cart fa-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="first_menu">
-            <a href="#">Sell</a>
-            <a href="#">Registry</a>
-            <a href="#">Community</a>
-            <a href="#">Blogs</a>
-            <a href="#">Mobile</a>
-            <a href="#">Gift Cards</a>
-        </div>
-        <div class="second_menu">
-            <a href="#">Register</a>
-            <a href="#">Sign in</a>
-            <a href="#">Whislost</a>
-            <a href="#">Cart</a>
-        </div>
+        <nav class="navigation">
+            <ul class = "nav_buttons">
+                <li><a href="#" title="Art">Art</a></li>
+                <li><a href="#" title="Home & Living">Home & Living</a></li>
+                <li><a href="#" title="Jewelry">Jewelry</a></li>
+                <li><a href="#" title="Women">Women</a></li>
+                <li><a href="#" title="Men">Men</a></li>
+                <li><a href="#" title="Kids">Kids</a></li>
+                <li><a href="#" title="Vintage">Vintage</a></li>
+                <li><a href="#" title="Weddings">Weddings</a></li>
+                <li><a href="#" title="More">More</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav class="navigation">
-        <ul class = "nav_buttons">
-            <li><a href="#">Art</a></li>
-            <li><a href="#">Home & Living</a></li>
-            <li><a href="#">Jewelry</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">Vintage</a></li>
-            <li><a href="#">Weddings</a></li>
-            <li><a href="#">More</a></li>
-        </ul>
-    </nav>
 </header>
 <div class="navigation_img">
-    <div class = "slider">
+    <div class = "img-container slider">
         <div class="left-col">
-            <div class="men">
+            <div id="men" class="slider_element" title="Men's wear">
                 <img src="/images/men.png" alt="Men's wear">
-            </div>
-            <div class="search">
-                <form class = "search_form">
-                    <input class="search_inp" type="text" placeholder="Search your product here (e.g.:Silver diamond ring)" value>
-                    <input class="search_button" type="image" src="/images/magnifying_glass.png" alt="Search">
-                </form>
-            </div>
-            <div class ="crafts">
-                <img src="/images/crafts.png" alt="Crafts">
+                <div class="upper-text">
+                    <h2 class="title">Men’s wear</h2>
+                    <p class="text">Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry. Lorem
+                    </p>
+                </div>
+                <div class="lower-text">
+                    <p class="text">Lorem Ipsum is simply dummy text</p>
+                </div>
             </div>
         </div>
         <div class="right-col">
-            <div class = "women">
-                <img src="https://github.com/Elbarono/rpi_lab1_atm.github.io/blob/main/images/women.png" alt="Women's wear">
+            <div id = "women" class="slider_element" title="Women's wear">
+                <img src="/images/women.png" alt="Women's wear">
+                <div class="upper-text">
+                    <h2 class="title">Women’s wear</h2>
+                    <p class="text">Lorem Ipsum is simply dummy text<br>of the printing and typesetting
+                    </p>
+                </div>
             </div>
-            <div class = "kids">
+            <div id = "kids" class="slider_element" title="Crafts">
                 <img src="/images/kids1.png" alt="Baby shop">
+                <div class="upper-layer" title="Kids"></div>
+                <div class="buttons-baby-shop">
+                    <div class="buttons-text"  title="Baby shop">
+                        Baby Shop
+                    </div>
+                    <div class="buttons-gift" title="Whislost">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <div class="buttons-cart" title="Add to cart">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                    </div>
+                    <div class="buttons-price">
+                        <span class="dollar-sign">$</span>
+                        <span class="dollar">99.</span>
+                        <span class="cents">00</span>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="img-container">
+        <div class="left-col">
+            <div id="search" class="slider_element">
+                <form id = "search_form">
+                    <input id="search_inp" type="text" value>
+                    <!--<div class="placeholder-text">Search your product here <span>(e.g.:Silver diamond ring)</span></div>-->
 
-            <div class="jewelry">
+                    <button id="search_button" type="submit"><i class ="fa-flip-horizontal fa-solid fa-magnifying-glass fa-4x"></i></button>
+                </form>
+            </div>
+            <div id ="crafts" class="slider_element" title="Crafts">
+                <img src="/images/crafts.png" alt="Crafts">
+                <div class="buttons-crafts">
+                    <div class="buttons-text"  title="Crafts">
+                        Crafts
+                    </div>
+                    <div class="buttons-gift" title="Whislost">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <div class="buttons-cart" title="Add to cart">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                    </div>
+                    <div class="buttons-price">
+                        <span class="dollar-sign">$</span>
+                        <span class="dollar">99.</span>
+                        <span class="cents">00</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-col">
+            <div id="jewelry" class="slider_element" title="Jewelry">
                 <img src="/images/jewelry.png" alt="Jewelry">
+                <div class="jewelry-title">
+                    <div class="main-rectangle"></div>
+                    <div class="triangle"></div>
+                    <div class="rectangle">
+                        <div class="ellipse"></div>
+                        <img src="/images/right_arrow_pink.png">
+                    </div>
+                </div>
+                <div class="jewelry-name">JEWELRY</div>
             </div>
         </div>
     </div>
 </div>
+<!-- конец первой части Ани-->
     
     <!--Часть Тани начало-->
     
@@ -303,11 +387,14 @@
         Register Now
     </div>
 </div>
-<hr>
+<!-- начало второй части Ани-->
 <footer>
+    <hr>
+    <div class="footer-line"></div>
     <div class="footer-columns">
-        <div class="shopping_with_us">
+        <div class="footer-midcontainer">
             <h2 class = "footer_tittle">SHOPPING WITH US</h2>
+            <div class="footer-under-title">
             <ul class="footer_list">
                 <li><a>why shop with us?</a></li>
                 <li><a>how it works</a></li>
@@ -319,10 +406,12 @@
                 <li><a>wish lists</a></li>
                 <li><a>gift vouchers</a></li>
             </ul>
+            </div>
         </div>
 
-        <div class="about_us">
+        <div class=class="footer-midcontainer">
             <h2 class = "footer_tittle">ABOUT US</h2>
+            <div class="footer-under-title">
             <ul class="footer_list">
                 <li><a>our story</a></li>
                 <li><a>customer contact</a></li>
@@ -332,47 +421,63 @@
                 <li><a>terms & conditions</a></li>
                 <li><a>privacy & cookies</a></li>
             </ul>
+            </div>
         </div>
 
-        <div class="selling_with_us">
+        <div class="footer-midcontainer">
             <h2 class = "footer_tittle">SELLING WITH US</h2>
+            <div class="footer-under-title">
             <ul class="footer_list">
                 <li><a>why join?</a></li>
                 <li><a>faqs</a></li>
                 <li><a>apply to sell with us</a></li>
                 <li><a>affiliates</a></li>
             </ul>
+            </div>
         </div>
 
-        <div class="subscribe">
+        <div class="footer-midcontainer">
             <h2 class = "footer_tittle">SIGNUP NEWSLETTER</h2>
+
+            <div class="footer-under-title">
             <div class="footer_signup">
-                <div>
-                    E.G.ABC@DOMAIN.COM
-                </div>
-                <div>
-                    SUBSCRIBE NOW
-                </div>
+                <input type="text" placeholder="E.G.:ABC@DOMAIN.COM">
+                <button>SUBSCRIBE NOW</button>
+            </div>
             </div>
             <h2 class = "footer_tittle">KEEP IN TOUCH</h2>
-            <div class="footer_social">
-                <a href = "https://www.facebook.com/" target ="_blank">
+            <ul class="footer_social">
+                <li class="rss"><a href = "https://www.rss.com/" target ="_blank" title="rss">
+                    <i class="fa-solid fa-rss fa-2x"></i></a>
+                </li>
+                <li class="facebook"><a href = "https://www.facebook.com/" target ="_blank" title="facebook">
+                    <i class="fa-brands fa-facebook-f fa-2x"></i></a>
+                </li>
+                <li class="twitter"><a href = "https://www.twitter.com/" target ="_blank" title="twitter">
+                    <i class="fa-brands fa-twitter fa-2x"></i></a>
+                </li>
+                <li class="flickr"><a href = "https://www.flickr.com/" target ="_blank" title="flickr">
+                    <i class="fa-brands fa-flickr fa-2x"></i></a>
+                </li>
 
-                </a>
-            </div>
+                <li class="google"><a href = "https://www.google.com/" target ="_blank" title="google">
+                    <i class="fa-brands fa-google fa-2x"></i></a>
+                </li>
+            </ul>
         </div>
     </div>
     <hr>
     <div class="copyright">
         <div class="copyright_left">
-            Copyright 2014 Gift Shop, All right reserved
+            Copyright©2014 Gift Shop, All right reserved
         </div>
         <div class="designed_by">
-            Designed by Amysxain
+            Designed by <a href="#">Amysxain</a>
         </div>
     </div>
     <hr>
 </footer>
+<!-- конец второй части Ани-->
 </div>
 </body>
 </html>
