@@ -102,7 +102,7 @@ h2 {
     font-size: 12pt;
 }
 
-.top a {
+.top a, .footer-columns a{
     color: #434343;
 }
 
@@ -202,7 +202,7 @@ h2 {
 .navigation_img {
     width: 1170px;
     margin-top: 15px;
-    margin-button: 10px;
+    margin-bottom: 10px;
 }
 
 .img-container {
@@ -221,14 +221,6 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.left-col img:hover {
-    cursor: pointer;
-}
-
-.right-col img:hover {
-    cursor: pointer;
 }
 
 #men {
@@ -287,7 +279,8 @@ h2 {
     text-transform: uppercase;
     color: #ffffff;
 }
-img:hover, .upper-layer:hover {
+
+.navigation_img img:hover, .upper-layer:hover {
     opacity: 0.8;
     cursor: pointer;
 }
@@ -303,7 +296,7 @@ img:hover, .upper-layer:hover {
     bottom: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
     text-transform: uppercase;
     background: rgba(54, 42, 79, 0.8);
@@ -364,7 +357,7 @@ img:hover, .upper-layer:hover {
     justify-content: center;
     position: absolute;
     right: 0;
-    bottom: 3px;
+    bottom: 5px;
 }
 
 #crafts .buttons-text {
@@ -380,7 +373,6 @@ img:hover, .upper-layer:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.6);
 }
-
 
 
 /* Search begin */
@@ -459,6 +451,7 @@ input {
 /* Search end */
 
 
+
 #jewelry {
     position: relative;
 }
@@ -489,6 +482,9 @@ input {
 }
 
 .jewelry-title .ellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     left: 23px;
     top: 17px;
@@ -498,14 +494,14 @@ input {
     background-color: #ffffff;
 }
 
-.jewelry-title .ellipse:hover{
-    cursor: pointer;
+.jewelry-title .ellipse i {
+    font-size: 25px;
+    color: #ef5966;
 }
 
-.jewelry-title img {
-    position: absolute;
-    left: 43px;
-    top: 32px;
+.jewelry-title .ellipse:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.4);
 }
 
 .jewelry-name {
@@ -634,6 +630,7 @@ footer {
 
 .footer_social li {
     display: flex;
+    color: #434343;
     width: 55px;
     height: 100%;
     margin-right: 10px;
