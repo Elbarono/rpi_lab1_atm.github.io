@@ -382,12 +382,7 @@ img:hover, .upper-layer:hover {
 
 
 
-
-.search_form{
-    display: flex;
-    height: 170px;
-    justify-content: center;
-}
+/* Search begin */
 .search-field{
     display: flex;
     flex-direction: row;
@@ -396,11 +391,6 @@ img:hover, .upper-layer:hover {
     height: 70px;
     background: white;
     box-shadow: 5px 5px 5px #D75862;
-}
-.search-button{
-    width: 70px;
-    height: 70px;
-    align-self: center;
 }
 .search-box{
     display: block;
@@ -417,11 +407,6 @@ img:hover, .upper-layer:hover {
     display: block;
     width: 420px;
     border: 0;
-}
-i {
-    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-    font-weight: 900;
-    font-style: normal;
 }
 .placeholder-text{
     display: none;
@@ -445,10 +430,6 @@ input {
     display: block;
     border: 0;
 }
-.search-button{
-    color: white;
-}
-
 #search {
     display: flex;
     justify-content: center;
@@ -463,33 +444,18 @@ input {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 70px;
     width: 570px;
 }
-
 #search_button {
     background: transparent;
     border: none;
+    color: white;
 }
-
-
 #search_button:hover {
     cursor: pointer;
 }
 
-#search_inp {
-    width: 100%;
-    height: 100%;
-    border: none;
-    margin-right: 15px;
-    margin-left: 10px;
-}
-
-
-#search_form input[type="text"] {
-    font-family: Lato, sans-serif;
-    font-size: 16px;
-}
+/* Search end */
 
 
 #jewelry {
