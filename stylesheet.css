@@ -244,7 +244,7 @@ i {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
     text-transform: uppercase;
     bottom: 60px;
@@ -259,7 +259,7 @@ i {
     margin: 0;
     font-family: 'Lora', sans-serif;
     font-size: 50px;
-    line-height: 1.2;
+    line-height: 0.8;
     font-weight: 400;
     color: #ef5966;
 }
@@ -308,7 +308,7 @@ img:hover, .upper-layer:hover {
     bottom: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
     text-transform: uppercase;
     background: rgba(54, 42, 79, 0.8);
@@ -319,7 +319,7 @@ img:hover, .upper-layer:hover {
     margin: 0;
     font-family: 'Lora', sans-serif;
     font-size: 25px;
-/*    line-height: 0.8;*/
+    line-height: 0.8;
     font-weight: 700;
     color: #ef5966;
 }
@@ -344,15 +344,6 @@ img:hover, .upper-layer:hover {
     left: 0;
     width: 100%;
     background: rgba(20, 34, 81, 0.5);
-}
-
-
-
-
-#kids .buttons-baby-shop {
-    
-    bottom: 15px;
-    right: 0;
 }
 
 #crafts {
