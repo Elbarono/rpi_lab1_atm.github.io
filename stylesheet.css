@@ -1,11 +1,3 @@
-@font-face {
-font-family: "Aparajita";
-src: url("https://github.com/Elbarono/rpi_lab1_atm.github.io/blob/main/fonts/Aparajita.ttf") format("truetype"); 
-font-style: normal; 
-font-weight: normal; 
-} 
-
-
 * {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
@@ -265,7 +257,7 @@ i {
 
 #men .upper-text .title {
     margin: 0;
-    font-family: 'Aparajita', sans-serif;
+    font-family: 'Lora', sans-serif;
     font-size: 58px;
     line-height: 0.7;
     font-weight: 700;
@@ -293,7 +285,7 @@ i {
 }
 
 #men .lower-text .text {
-    font-family: 'Aparajita', sans-serif;
+    font-family: 'Lora', sans-serif;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 700;
@@ -325,7 +317,7 @@ img:hover, .upper-layer:hover {
 
 #women .upper-text .title {
     margin: 0;
-    font-family: 'Aparajita', sans-serif;
+    font-family: 'Lora', sans-serif;
     font-size: 35px;
     line-height: 0.8;
     font-weight: 700;
@@ -497,7 +489,7 @@ img:hover, .upper-layer:hover {
     position: absolute;
     bottom: 110px;
     right: -80px;
-    font-family: Aparajita, sans-serif;
+    font-family: Lora, sans-serif;
     font-size: 64px;
     font-weight: 400;
     text-transform: uppercase;
