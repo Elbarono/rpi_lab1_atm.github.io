@@ -259,7 +259,7 @@ i {
     margin: 0;
     font-family: 'Lora', sans-serif;
     font-size: 50px;
-    line-height: 0.7;
+   /* line-height: 0.7;*/
     font-weight: 400;
     color: #ef5966;
 }
@@ -319,7 +319,7 @@ img:hover, .upper-layer:hover {
     margin: 0;
     font-family: 'Lora', sans-serif;
     font-size: 25px;
-    line-height: 0.8;
+/*    line-height: 0.8;*/
     font-weight: 700;
     color: #ef5966;
 }
@@ -371,6 +371,7 @@ img:hover, .upper-layer:hover {
     justify-content: center;
     position: absolute;
     right: 0;
+    bottom: 0;
 }
 
 #crafts .buttons-text {
