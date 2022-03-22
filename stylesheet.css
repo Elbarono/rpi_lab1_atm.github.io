@@ -25,71 +25,6 @@ a {
 h2 {
     text-transform: uppercase;
 }
-.search_form{
-    display: flex;
-    height: 170px;
-    justify-content: center;
-}
-.search-field{
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    width: 480px;
-    height: 70px;
-    background: white;
-    box-shadow: 5px 5px 5px #D75862;
-}
-.search-button{
-    width: 70px;
-    height: 70px;
-    align-self: center;
-}
-.search-box{
-    display: block;
-    position: relative;
-    flex-direction: column;
-    align-self: stretch;
-    justify-self: center;
-    margin: 25px;
-}
-.search-box:invalid{
-    border: 0;
-}
-.search-box input{
-    display: block;
-    width: 420px;
-    border: 0;
-}
-i {
-    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-    font-weight: 900;
-    font-style: normal;
-}
-.placeholder-text{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 2px;
-    user-select: none;
-    cursor: text;
-    border: 0;
-    letter-spacing: 1px;
-}
-.placeholder-text-exmpl{
-    color: #c2c2c2;
-}
-input {
-    outline:none;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-.search-box input:invalid + .placeholder-text{
-    display: block;
-    border: 0;
-}
-.search-button{
-    color: white;
-}
 
 /*стили Ани начало*/
 .menu {
@@ -448,7 +383,71 @@ img:hover, .upper-layer:hover {
 
 
 
-
+.search_form{
+    display: flex;
+    height: 170px;
+    justify-content: center;
+}
+.search-field{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 480px;
+    height: 70px;
+    background: white;
+    box-shadow: 5px 5px 5px #D75862;
+}
+.search-button{
+    width: 70px;
+    height: 70px;
+    align-self: center;
+}
+.search-box{
+    display: block;
+    position: relative;
+    flex-direction: column;
+    align-self: stretch;
+    justify-self: center;
+    margin: 25px;
+}
+.search-box:invalid{
+    border: 0;
+}
+.search-box input{
+    display: block;
+    width: 420px;
+    border: 0;
+}
+i {
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    font-style: normal;
+}
+.placeholder-text{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    user-select: none;
+    cursor: text;
+    border: 0;
+    letter-spacing: 1px;
+}
+.placeholder-text-exmpl{
+    color: #c2c2c2;
+}
+input {
+    outline:none;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.search-box input:invalid + .placeholder-text{
+    display: block;
+    border: 0;
+}
+.search-button{
+    color: white;
+}
 
 #search {
     display: flex;
