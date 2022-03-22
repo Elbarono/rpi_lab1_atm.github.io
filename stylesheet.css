@@ -201,8 +201,7 @@ h2 {
 
 .navigation_img {
     width: 1170px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin: 15px 0;
 }
 
 .img-container {
@@ -357,7 +356,7 @@ h2 {
     justify-content: center;
     position: absolute;
     right: 0;
-    bottom: 5px;
+    bottom: 3px;
 }
 
 #crafts .buttons-text {
