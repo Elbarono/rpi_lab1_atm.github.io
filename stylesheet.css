@@ -742,7 +742,8 @@ footer hr {
 .products-header-arrows {
     display: flex;
     justify-content: space-between;
-    width: 141px;font-size: 30px;
+    width: 141px;
+    font-size: 30px;
     color: white;
 }
 .new-products-header-arrow {
@@ -825,6 +826,7 @@ i {
 .product-icons{
     display: flex;
     flex-flow: row nowrap;
+    height: 50px;
 }
 .product-icon{
     display: flex;
