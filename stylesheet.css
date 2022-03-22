@@ -489,7 +489,7 @@ img:hover, .upper-layer:hover {
     position: absolute;
     bottom: 110px;
     right: -80px;
-    font-family: Lora, sans-serif;
+    font-family: 'Lora', sans-serif;
     font-size: 64px;
     font-weight: 400;
     text-transform: uppercase;
