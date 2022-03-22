@@ -259,7 +259,7 @@ i {
     margin: 0;
     font-family: 'Lora', sans-serif;
     font-size: 50px;
-   /* line-height: 0.7;*/
+    line-height: 1.2;
     font-weight: 400;
     color: #ef5966;
 }
@@ -488,7 +488,7 @@ img:hover, .upper-layer:hover {
 .jewelry-name {
     position: absolute;
     bottom: 110px;
-    right: -60px;
+    right: -100px;
     font-family: 'Lora', sans-serif;
     font-size: 64px;
     font-weight: 400;
