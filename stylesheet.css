@@ -257,7 +257,7 @@ i {
 
 #men .upper-text .title {
     margin: 0;
-    font-family: Aparajita, sans-serif;
+    font-family: 'Aparajita', sans-serif;
     font-size: 58px;
     line-height: 0.7;
     font-weight: 700;
@@ -267,7 +267,6 @@ i {
 #men .upper-text .text {
     margin: 0;
     line-height: 1.2;
-    font-family: Lato, sans-serif;
     font-size: 13px;
     font-weight: 700;
     color: #ffffff;
@@ -286,7 +285,7 @@ i {
 }
 
 #men .lower-text .text {
-    font-family: Aparajita, sans-serif;
+    font-family: 'Aparajita', sans-serif;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 700;
@@ -318,7 +317,7 @@ img:hover, .upper-layer:hover {
 
 #women .upper-text .title {
     margin: 0;
-    font-family: Aparajita, sans-serif;
+    font-family: 'Aparajita', sans-serif;
     font-size: 35px;
     line-height: 0.8;
     font-weight: 700;
