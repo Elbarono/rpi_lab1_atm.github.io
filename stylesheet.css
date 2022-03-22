@@ -288,7 +288,7 @@ i {
     font-family: 'Lora', sans-serif;
     font-size: 15px;
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -344,6 +344,11 @@ img:hover, .upper-layer:hover {
     left: 0;
     width: 100%;
     background: rgba(20, 34, 81, 0.5);
+}
+
+#kids .buttons-baby-shop {
+    right: 0;
+    bottom: 5px;
 }
 
 #crafts {
@@ -481,7 +486,7 @@ img:hover, .upper-layer:hover {
     bottom: 110px;
     right: -100px;
     font-family: 'Lora', sans-serif;
-    font-size: 64px;
+    font-size: 60px;
     font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
