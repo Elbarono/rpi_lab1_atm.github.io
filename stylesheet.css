@@ -86,6 +86,9 @@ input {
     display: block;
     border: 0;
 }
+.search-button{
+    color: white;
+}
 
 /*стили Ани начало*/
 .menu {
