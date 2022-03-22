@@ -260,7 +260,7 @@ i {
     font-family: 'Lora', sans-serif;
     font-size: 50px;
     line-height: 0.8;
-    font-weight: 400;
+    font-weight: 700;
     color: #ef5966;
 }
 
@@ -268,7 +268,7 @@ i {
     margin: 0;
     line-height: 1.2;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 500;
     color: #ffffff;
 }
 
@@ -348,7 +348,9 @@ img:hover, .upper-layer:hover {
 
 #kids .buttons-baby-shop {
     right: 0;
-    bottom: 5px;
+    bottom: 15px;
+    left: auto;
+    top: auto;
 }
 
 #crafts {
@@ -367,7 +369,7 @@ img:hover, .upper-layer:hover {
     justify-content: center;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 5px;
 }
 
 #crafts .buttons-text {
@@ -484,9 +486,9 @@ img:hover, .upper-layer:hover {
 .jewelry-name {
     position: absolute;
     bottom: 110px;
-    right: -100px;
+    right: -80px;
     font-family: 'Lora', sans-serif;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
