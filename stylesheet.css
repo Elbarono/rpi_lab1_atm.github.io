@@ -25,7 +25,40 @@ a {
 h2 {
     text-transform: uppercase;
 }
-
+.search_form{
+    display: flex;
+    height: 170px;
+    justify-content: center;
+}
+.search-field{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 480px;
+    height: 70px;
+    background: white;
+}
+.search-button{
+    width: 70px;
+    height: 70px;
+    align-self: center;
+}
+.search-box{
+    display: block;
+    position: relative;
+    flex-direction: column;
+    align-self: stretch;
+    justify-self: center;
+    margin: 25px;
+}
+.search-box:invalid{
+    border: 0;
+}
+.search-box input{
+    display: block;
+    width: 420px;
+    border: 0;
+}
 i {
     font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
     font-weight: 900;
