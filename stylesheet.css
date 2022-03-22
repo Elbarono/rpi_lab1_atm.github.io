@@ -37,6 +37,7 @@ h2 {
     width: 480px;
     height: 70px;
     background: white;
+    box-shadow: 5px 5px 5px #D75862;
 }
 .search-button{
     width: 70px;
@@ -461,7 +462,7 @@ img:hover, .upper-layer:hover {
 #search_form {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 70px;
     width: 570px;
