@@ -825,8 +825,8 @@ i {
 }
 .product-icons{
     display: flex;
-    flex-flow: row nowrap;
     height: 50px;
+    flex-flow: row nowrap;
 }
 .product-icon{
     display: flex;
