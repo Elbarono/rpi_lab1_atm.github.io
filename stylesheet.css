@@ -31,6 +31,28 @@ i {
     font-weight: 900;
     font-style: normal;
 }
+.placeholder-text{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    user-select: none;
+    cursor: text;
+    border: 0;
+    letter-spacing: 1px;
+}
+.placeholder-text-exmpl{
+    color: #c2c2c2;
+}
+input {
+    outline:none;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.search-box input:invalid + .placeholder-text{
+    display: block;
+    border: 0;
+}
 
 /*стили Ани начало*/
 .menu {
