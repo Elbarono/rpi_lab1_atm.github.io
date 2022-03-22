@@ -623,6 +623,10 @@ footer {
     align-items: center;
 }
 
+.footer_social a i {
+    color: #ffffff;
+}
+
 .facebook {
     background-color: #39599f;
 }
