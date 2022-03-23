@@ -337,6 +337,11 @@ h2 {
     top: auto;
 }
 
+
+.slider {
+    margin-bottom: 2px;
+}
+
 #crafts {
     position: relative;
 }
