@@ -931,6 +931,12 @@ i {
 .blue-note{
     background-color: #05aecc;
 }
+.new-products-image:hover img,
+.new-products-center-image:hover img,
+.featured-products-image:hover img {
+    opacity: 0.8;
+    cursor: pointer;
+}
 /*Стили Тани конец*/
 
 /*стили Максима начало*/
