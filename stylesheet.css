@@ -323,7 +323,7 @@ h2 {
 
 #kids .upper-layer{
     position: absolute;
-    bottom: 5px;
+    bottom: 4px;
     top:0;
     left: 0;
     width: 100%;
@@ -332,7 +332,7 @@ h2 {
 
 #kids .buttons-baby-shop {
     right: 0;
-    bottom: 15px;
+    bottom: 30px;
     left: auto;
     top: auto;
 }
