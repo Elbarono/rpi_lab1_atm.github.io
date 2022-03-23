@@ -595,7 +595,10 @@ footer {
     border: 1px solid #dedede;
 }
 
-.footer_signup button {
+.footer_signup a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
     border: none;
     color: #ffffff;
@@ -603,7 +606,7 @@ footer {
     cursor: pointer;
 }
 
-.footer_signup button:hover {
+.footer_signup a:hover {
     background-color: #ffffff;
     color: #ef5966;
     border: 1px solid #ef5966;
@@ -991,35 +994,7 @@ i {
 }
 
 .chose_products_option:hover {
-    transform: scale(1.1);
-}
-
-.chose_img{
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(18, 1fr);
-    width: 160px;
-    height: 180px;
-
-    position: relative;
-}
-
-.firstimgblack{
-    grid-column: 1 / -1;
-    grid-row: 5 / -1;
-    z-index: 1;
-}
-
-.lineimgblack {
-    grid-column: 4 / -1;
-    grid-row: 1 / -1;
-    z-index: 3;
-}
-
-.secondimgblack {
-    grid-column: 8 / -1;
-    grid-row: 8 / -1;
-    z-index: 2;
+    opacity: 0.8;
 }
 
 .register_login_option{
@@ -1035,34 +1010,7 @@ i {
 }
 
 .register_login_option:hover {
-    transform: scale(1.1);
-}
-
-.register_login_img{
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(18, 1fr);
-    width: 160px;
-    height: 180px;
-    position: relative;
-}
-
-.firstimgblue{
-    grid-column: 1 / -1;
-    grid-row: 5 / -1;
-    z-index: 1;
-}
-
-.lineimgblue {
-    grid-column: 3 / -1;
-    grid-row: 1 / -1;
-    z-index: 3;
-}
-
-.secondimgblue {
-    grid-column: 9 / -1;
-    grid-row: 7 / -1;
-    z-index: 2;
+    opacity: 0.8;
 }
 
 .checkout_option{
@@ -1073,39 +1021,12 @@ i {
     padding: 40px;
     width: 370px;
     height: 230px;
-    background: #ff626f;
+    background: #f0626e;
     cursor: pointer;
 }
 
 .checkout_option:hover {
-    transform: scale(1.1);
-}
-
-.checkout_img{
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(18, 1fr);
-    width: 160px;
-    height: 180px;
-    position: relative;
-}
-
-.firstimgred{
-    grid-column: 1 / -1;
-    grid-row: 3 / -1;
-    z-index: 1;
-}
-
-.lineimgred {
-    grid-column: 2 / -1;
-    grid-row: 1 / -1;
-    z-index: 3;
-}
-
-.secondimgred {
-    grid-column: 7 / -1;
-    grid-row: 8 / -1;
-    z-index: 2;
+    opacity: 0.8;
 }
 
 .text_option{
@@ -1121,9 +1042,12 @@ i {
 }
 
 .register_button {
+    display: flex;
     width: 650px;
     height: 60px;
     font-size: 30px;
+    justify-content: center;
+    align-items: center;
     border: none;
     color: #ffffff;
     background-color: #05aecc;
