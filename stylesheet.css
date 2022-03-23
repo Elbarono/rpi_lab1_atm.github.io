@@ -929,3 +929,211 @@ i {
     background-color: #05aecc;
 }
 /*Стили Тани конец*/
+
+/*стили Максима начало*/
+
+.who_we_are {
+    margin: 15px;
+    position: relative;
+}
+
+.who_we_are_header{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.who_we_are_header_text{
+    display: flex;
+    align-self: flex-end;
+    color: #05aecc;
+    padding: 0 20px 10px 0;
+    margin-left: 30px;
+    border-bottom: #f0626e;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 30px;
+}
+
+.who_we_are_text{
+    width: 1120px;
+    margin: 28px;
+}
+
+.size_text{
+    font-size: 30px;
+    color: #ffffff;
+    width: 125px;
+}
+
+.options{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 15px;
+}
+
+.chose_products_option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    width: 370px;
+    height: 230px;
+    background: #434343;
+    cursor: pointer;
+}
+
+.chose_products_option:hover {
+    transform: scale(1.1);
+}
+
+.chose_img{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    width: 160px;
+    height: 180px;
+
+    position: relative;
+}
+
+.firstimgblack{
+    grid-column: 1 / -1;
+    grid-row: 5 / -1;
+    z-index: 1;
+}
+
+.lineimgblack {
+    grid-column: 4 / -1;
+    grid-row: 1 / -1;
+    z-index: 3;
+}
+
+.secondimgblack {
+    grid-column: 8 / -1;
+    grid-row: 8 / -1;
+    z-index: 2;
+}
+
+.register_login_option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    width: 370px;
+    height: 230px;
+    background: #05aecc;
+    cursor: pointer;
+}
+
+.register_login_option:hover {
+    transform: scale(1.1);
+}
+
+.register_login_img{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    width: 160px;
+    height: 180px;
+    position: relative;
+}
+
+.firstimgblue{
+    grid-column: 1 / -1;
+    grid-row: 5 / -1;
+    z-index: 1;
+}
+
+.lineimgblue {
+    grid-column: 3 / -1;
+    grid-row: 1 / -1;
+    z-index: 3;
+}
+
+.secondimgblue {
+    grid-column: 9 / -1;
+    grid-row: 7 / -1;
+    z-index: 2;
+}
+
+.checkout_option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    width: 370px;
+    height: 230px;
+    background: #ff626f;
+    cursor: pointer;
+}
+
+.checkout_option:hover {
+    transform: scale(1.1);
+}
+
+.checkout_img{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    width: 160px;
+    height: 180px;
+    position: relative;
+}
+
+.firstimgred{
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+    z-index: 1;
+}
+
+.lineimgred {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+    z-index: 3;
+}
+
+.secondimgred {
+    grid-column: 7 / -1;
+    grid-row: 8 / -1;
+    z-index: 2;
+}
+
+.text_option{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.register_option{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: space-around;
+}
+
+.register_button {
+    width: 650px;
+    height: 60px;
+    font-size: 30px;
+    border: none;
+    color: #ffffff;
+    background-color: #05aecc;
+    cursor: pointer;
+}
+
+.register_button:hover {
+    background-color: #ffffff;
+    color: #ef5966;
+    border: 1px solid #ef5966;
+}
+
+/*стили Максима конец*/
