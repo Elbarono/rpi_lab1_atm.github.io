@@ -970,7 +970,7 @@ i {
 .who_we_are_text{
     width: 1120px;
     margin: 28px;
-    
+    margin-bottom: 0px
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
