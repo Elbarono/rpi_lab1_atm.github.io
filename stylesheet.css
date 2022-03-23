@@ -931,9 +931,7 @@ i {
 }
 .new-products-image img:hover,
 .new-products-center-image img:hover,
-.featured-products-image img:hover,
-.featured-products-header-arrow:hover,
-.new-products-header-arrow:hover {
+.featured-products-image img:hover {
     opacity: 0.8;
     cursor: pointer;
 }
