@@ -752,6 +752,7 @@ footer hr {
 }
 .new-products-header-arrow:hover {
     background-color: #05aecc;
+    cursor: pointer;
 }
 .featured-products-header-arrow {
     display: flex;
