@@ -198,6 +198,10 @@ h2 {
 .navigation_img {
     width: 1170px;
     margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
 }
 
 .img-container {
@@ -205,36 +209,47 @@ h2 {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 5px;
 }
 
-.left-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.right-col {
+.right-col, .left-col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 #men {
-    position: relative;
+    width: 670px;
+    height: 570px;
+    background-image: url("images/men.png");
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.men-text {
+    margin-bottom: 12px;
+    width: 350px;
+    height: 147px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 #men .upper-text {
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
     text-transform: uppercase;
-    bottom: 60px;
-    width: 350px;
+    width: 100%;
     height: 105px;
     padding-left: 20px;
     padding-top: 10px;
-    background: rgba(54, 42, 79, 0.8)
+    background: rgba(54, 42, 79, 0.8);
 }
 
 #men .upper-text .title {
@@ -259,10 +274,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
     height: 40px;
-    bottom: 18px;
-    width: 350px;
+    width: 100%;
     background: rgba(239, 89, 102, 0.87);
 }
 
@@ -275,22 +288,20 @@ h2 {
     color: #ffffff;
 }
 
-.logo_img:hover, #women img:hover, #men img:hover, 
-#jewelry img:hover, #crafts img:hover, #kids img:hover,
-.upper-layer:hover {
-    opacity: 0.8;
-    cursor: pointer;
-}
-
 #women {
-    position: relative;
+    width: 494px;
+    height: 320px;
+    background-image: url("images/women.png");
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #women .upper-text {
-    position: absolute;
     height: 83px;
     width: 270px;
-    bottom: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -317,33 +328,34 @@ h2 {
     color: #ffffff;
 }
 
-#kids {
-    position: relative;
+#men:hover, #women:hover, #kids:hover, #crafts:hover, #jewelry:hover {
+    cursor: pointer;
 }
 
-#kids .upper-layer{
-    position: absolute;
-    bottom: 4px;
-    top:0;
-    left: 0;
-    width: 100%;
-    background: rgba(20, 34, 81, 0.5);
+#kids {
+    width: 494px;
+    height: 245px;
+    background-image: url("images/kids.png");
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 #kids .buttons-baby-shop {
-    right: 0;
-    bottom: 30px;
-    left: auto;
-    top: auto;
-}
-
-
-.slider {
-    margin-bottom: 2px;
+    position: unset;
+    margin-bottom: 30px;
 }
 
 #crafts {
-    position: relative;
+    width: 670px;
+    height: 335px;
+    background-image: url("images/crafts.png");
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 #crafts .buttons-crafts i {
@@ -356,7 +368,6 @@ h2 {
     color: white;
     align-items: stretch;
     justify-content: center;
-    position: absolute;
     right: 0;
     bottom: 3px;
 }
@@ -428,9 +439,8 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 5px;
+    width: 670px;
+    height: 171px;
     background-color: #f0626e;
 }
 #search_form {
@@ -454,31 +464,42 @@ input {
 
 
 #jewelry {
-    position: relative;
+    width: 494px;
+    height: 510px;
+    background-image: url("images/jewelry.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .jewelry-title {
-    position: absolute;
-    right: 0;
-    top: 115px;
-    width: 100px;
-    bottom: 5px;
+    position: relative;
+    width: 95px;
+    height: 400px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .jewelry-title .main-rectangle {
-    position: absolute;
-    right: 0;
-    height: 100%;
+    display: flex;
     width: 85px;
+    height: 100%;
     background: rgba(54, 42, 79, 0.58);
 }
 
 .jewelry-title .rectangle {
     position: absolute;
-    right: 0;
-    top: 18px;
+    top: 20px;
     height: 85px;
-    width: 100%;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: rgba(240, 98, 110, 0.98);
 }
 
@@ -486,7 +507,6 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     left: 23px;
     top: 17px;
     height: 53px;
@@ -524,7 +544,7 @@ input {
 
 .jewelry-title .triangle {
     position: absolute;
-    top: 103px;
+    top: 105px;
     right: 85px;
     border-top: 10px solid rgba(197, 81, 91, 1);
     border-left: 15px solid transparent;
@@ -688,15 +708,6 @@ input {
 .copyright a:hover {
     color: #05aecc;
 }
-
-footer hr {
-    width: 100%;
-    height: 1px;
-    border: none;
-    background: #b9b9b9;
-    margin: 0;
-}
-
 
 /*стили Ани конец*/
 
