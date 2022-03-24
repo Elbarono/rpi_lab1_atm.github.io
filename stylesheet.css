@@ -772,7 +772,6 @@ input {
 }
 .new-products-image-1{
     background: url("images/new_prod1.png");
-    height: 200px;
     width: 370px;
 }
 .new-products-image-2{
@@ -780,12 +779,10 @@ input {
     align-items: center;
     justify-content: center;
     background: url("images/new_prod2.png");
-    height: 200px;
     width: 370px;
 }
 .new-products-image-3{
     background: url("images/new_prod3.png");
-    height: 200px;
     width: 370px;
 }
 .new-products-image-1:hover{
