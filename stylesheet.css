@@ -1093,7 +1093,8 @@ i {
 .register_option{
     display: flex;
     flex-direction: row;
-    margin: 30px;
+    margin: 15px;
+    margin-bottom: 30px;
     justify-content: space-around;
 }
 
@@ -1108,6 +1109,7 @@ i {
     color: #ffffff;
     background-color: #05aecc;
     cursor: pointer;
+    
 }
 
 .register_button:hover {
