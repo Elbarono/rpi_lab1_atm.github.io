@@ -785,12 +785,6 @@ input {
     background: url("images/new_prod3.png");
     width: 370px;
 }
-.new-products-image-1:hover{
-    cursor: pointer;
-}
-.new-products-image-3:hover{
-    cursor: pointer;
-}
 .featured-products-header-arrow {
     display: flex;
     justify-content: center;
