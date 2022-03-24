@@ -750,6 +750,7 @@ input {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     font-size: 30px;
+    /* font-family: 'Lato', sans-serif;*/
 }
 .products-header-arrows {
     display: flex;
@@ -770,6 +771,30 @@ input {
     background-color: #05aecc;
     cursor: pointer;
 }
+.new-products-image-1{
+    background: url("images/new_prod.png");
+    height: 200px;
+    width: 370px;
+}
+.new-products-image-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("images/new_prod2.png");
+    height: 200px;
+    width: 370px;
+}
+.new-products-image-3{
+    background: url("images/new_prod3.png");
+    height: 200px;
+    width: 370px;
+}
+.new-products-image-1:hover{
+    cursor: pointer;
+}
+.new-products-image-3:hover{
+    cursor: pointer;
+}
 .featured-products-header-arrow {
     display: flex;
     justify-content: center;
@@ -786,9 +811,7 @@ input {
     display: flex;
     height: 55px;
     color: white;
-    align-items: stretch;
     justify-content: center;
-    position: absolute;
     top: 75px;
     left: 40px;
 }
@@ -871,9 +894,7 @@ i {
 .product-inf{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    width: 270px;
     background-color: white;
 }
 .product-description{
@@ -882,6 +903,9 @@ i {
     border-style: solid;
     border-color: #b9b9b9;
     border-width: 1px 0;
+}
+.product-description p{
+    margin: 0;
 }
 .product-description-title{
     letter-spacing: 1px;
@@ -905,10 +929,18 @@ i {
     font-size: 15px;
 }
 .featured-products-image{
-    position: relative;
+    display: flex;
+    flex-direction: column;
     border-style: solid;
     border-color: #b9b9b9;
     border-width: 1px;
+    position: relative;
+}
+.featured-products-image img{
+    object-position: top;
+    object-fit: cover;
+    height: 290px;
+    width: 270px;
 }
 .line{
     position: absolute;
@@ -946,8 +978,6 @@ i {
 .blue-note{
     background-color: #05aecc;
 }
-.new-products-image img:hover,
-.new-products-center-image img:hover,
 .featured-products-image img:hover {
     opacity: 0.8;
     cursor: pointer;
