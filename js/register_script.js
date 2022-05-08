@@ -36,19 +36,19 @@ function register() {
     Nameinput.type = "text"
     Nameinput.id = "Name"
     Nameinput.className = "inputregister"
-    Nameinput.onchange = function () { validinput() }
+    Nameinput.oninput = function () { validinput() }
 
     let Emailinput = document.createElement("input")
     Emailinput.type = "text"
     Emailinput.id = "Email"
     Emailinput.className = "inputregister"
-    Emailinput.onchange = function () { validinput() }
+    Emailinput.oninput = function () { validinput() }
 
     let Phoneinput = document.createElement("input")
     Phoneinput.type = "text"
     Phoneinput.id = "Phone"
     Phoneinput.className = "inputregister"
-    Phoneinput.onchange = function () { validinput() }
+    Phoneinput.oninput = function () { validinput() }
 
     let send = document.createElement('button')
     send.className = "send"
