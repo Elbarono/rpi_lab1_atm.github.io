@@ -1237,7 +1237,11 @@ i {
     border: 1px solid #ef5966;
 }
 
-.success {
+.success {  
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
     position: relative;
     background: #ffffff;
     border-style: solid;
