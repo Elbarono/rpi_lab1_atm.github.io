@@ -153,12 +153,13 @@ function log_out() {
 }
 
 if (document.cookie != '') {
-    let Name = document.cookie.split('=')
-    for (let i=0; i < Name.length; i+=2 ) {
-        if (Name[i] == 'User') {
+    let cookie = document.cookie.split(';')
+    for (let i=0; i < cookie.length; i++ ) {
+        let Name = cookie[i].split('=')
+        if (Name[0] == 'User') {
             let account = document.getElementById('account')
             document.getElementById('register').remove()
-            account.textContent = Name[i+1]
+            account.textContent = Name[1]
             let log = document.getElementById('log_out')
             log.textContent = "Log out"
             log.onclick = function () { log_out() }
