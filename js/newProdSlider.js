@@ -127,12 +127,13 @@ function addIElement(parent, className) {
     parent.appendChild(iElement);
     return iElement;
 }
-
-
 function slide(slider, central_buttons, sliderCentralElement, offset) {
 
+    central_buttons.remove();
     slider.style.transform = 'translate(-'+offset+'px)';
-    sliderCentralElement.appendChild(central_buttons);
+    slider.ontransitionend = function () {
+        sliderCentralElement.appendChild(central_buttons);
+    }
 }
 let right_arrow = document.getElementById("new_products_header_right_arrow");
 let left_arrow = document.getElementById("new_products_header_left_arrow");
