@@ -131,14 +131,11 @@ function log_out() {
 }
 
 if (document.cookie != '') {
-    let Name = document.cookie.split('=');
+    let Name = document.cookie.split('=')
+    document.getElementById('register').remove()
     let account = document.getElementById('account')
     account.textContent = Name[1]
     let log = document.getElementById('log_out')
     log.textContent = "Log out"
     log.onclick = function () { log_out() }
 }
-
-
-
-
