@@ -727,6 +727,7 @@ input {
     display: flex;
     justify-content: space-between;
     width: 1170px;
+    overflow: hidden;
 }
 .products-header {
     display: flex;
@@ -922,11 +923,16 @@ i {
     border-color: #b9b9b9;
     border-width: 1px;
     position: relative;
+    margin-right: 30px;
+    width: 270px;
+
+    transition: 0.5s;
 }
 .featured-products-image img{
     object-position: top;
     object-fit: cover;
     height: 290px;
+    width: 100%;
 }
 .line{
     position: absolute;
