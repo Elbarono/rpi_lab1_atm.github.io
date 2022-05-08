@@ -13,6 +13,9 @@ function register() {
     text.textContent = "Register"
     text.className = "headerstext"
 
+    let line = document.createElement('div');
+    line.className = 'register_line';
+
     let exit = document.createElement('button')
     exit.className = "exit"
     exit.onclick = function() { closemodel() }
@@ -20,9 +23,22 @@ function register() {
     let smart = document.createElement("i")
     smart.className = "fa-solid fa-times"
 
+    let formInput = document.createElement('div');
+    formInput.className= 'form_input';
+
+    let nameInput = document.createElement('div');
+    nameInput.className= 'user_input';
+
+    let emailInput = document.createElement('div');
+    emailInput.className= 'user_input';
+
+    let phoneInput = document.createElement('div');
+    phoneInput.className= 'user_input';
+
     let Nametext = document.createElement("p")
     Nametext.className = "textregister"
     Nametext.textContent = "Name"
+
 
     let Emailtext = document.createElement("p")
     Emailtext.className = "textregister"
@@ -36,19 +52,19 @@ function register() {
     Nameinput.type = "text"
     Nameinput.id = "Name"
     Nameinput.className = "inputregister"
-    Nameinput.oninput = function () { validinput() }
+    Nameinput.onchange = function () { validinput() }
 
     let Emailinput = document.createElement("input")
     Emailinput.type = "text"
     Emailinput.id = "Email"
     Emailinput.className = "inputregister"
-    Emailinput.oninput = function () { validinput() }
+    Emailinput.onchange = function () { validinput() }
 
     let Phoneinput = document.createElement("input")
     Phoneinput.type = "text"
     Phoneinput.id = "Phone"
     Phoneinput.className = "inputregister"
-    Phoneinput.oninput = function () { validinput() }
+    Phoneinput.onchange = function () { validinput() }
 
     let send = document.createElement('button')
     send.className = "send"
@@ -62,17 +78,23 @@ function register() {
     header.appendChild(text)
     header.appendChild(exit)
     model.appendChild(header)
+    header.appendChild(line);
 
-    model.appendChild(Nametext)
-    model.appendChild(Nameinput)
+    model.appendChild(formInput);
+    formInput.appendChild(nameInput);
+    formInput.appendChild(emailInput);
+    formInput.appendChild(phoneInput);
 
-    model.appendChild(Emailtext)
-    model.appendChild(Emailinput)
+    nameInput.appendChild(Nametext)
+    nameInput.appendChild(Nameinput)
 
-    model.appendChild(Phonetext)
-    model.appendChild(Phoneinput)
+    emailInput.appendChild(Emailtext)
+    emailInput.appendChild(Emailinput)
 
-    model.appendChild(send)
+    phoneInput.appendChild(Phonetext)
+    phoneInput.appendChild(Phoneinput)
+
+    formInput.appendChild(send)
 
     bg_layer.appendChild(model)
 
