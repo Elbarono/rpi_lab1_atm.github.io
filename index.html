@@ -203,16 +203,16 @@
             <div class="line"></div>
             <span class="products-header-text">Featured Products</span>
             <div class="products-header-arrows">
-                <div class="featured-products-header-arrow" title="Previous product">
+                <div id = "featured-products-arrow-left" class="featured-products-header-arrow" title="Previous product">
                     <i class="fa-solid fa-angle-left"></i>
                 </div>
-                <div class="featured-products-header-arrow" title="Next product">
+                <div id = "featured-products-arrow-right" class="featured-products-header-arrow" title="Next product">
                     <i class="fa-solid fa-angle-right"></i>
                 </div>
             </div>
         </div>
-        <div class="featured-products-images">
-            <div class="featured-products-image red" title="Featured product 1">
+        <ul id="featured-products-images">
+            <li class="featured-products-image red" title="Featured product 1">
                 <img src="images/woman1.png" alt="image-1">
                 <div class="product-inf">
                     <div class="product-description" title="">
@@ -241,8 +241,8 @@
                     </div>
                 </div>
                 <span class="note red-note">20% OFF</span>
-            </div>
-            <div class="featured-products-image red" title="Featured product 2">
+            </li>
+            <li class="featured-products-image red" title="Featured product 2">
                 <img src="images/woman2.png" alt="image-2">
                 <div class="product-inf">
                     <div class="product-description" title="">
@@ -270,8 +270,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="featured-products-image blue" title="Featured product 3">
+            </li>
+            <li class="featured-products-image blue" title="Featured product 3">
                 <img src="images/woman3.png" alt="image-3">
                 <div class="product-inf">
                     <div class="product-description" title="">
@@ -300,8 +300,8 @@
                     </div>
                 </div>
                 <span class="note blue-note">New</span>
-            </div>
-            <div class="featured-products-image red" title="Featured product 4">
+            </li>
+            <li class="featured-products-image red" title="Featured product 4">
                 <img src="images/woman4.png" alt="image-4">
                 <div class="product-inf">
                     <div class="product-description" title="">
@@ -329,8 +329,126 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </li>
+            <li class="featured-products-image red" title="Featured product 1">
+                <img src="images/woman1.png" alt="image-1">
+                <div class="product-inf">
+                    <div class="product-description" title="">
+                        <p class="product-description-title">
+                            Product Title here
+                        </p>
+                        <p class="product-description-text">
+                            Short Description here
+                        </p>
+                    </div>
+                    <div class="product-icons">
+                        <div class="product-icon" title="Arrows">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                        <div class="product-icon" title="Whislost">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div class="product-icon" title="Add to cart">
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </div>
+                        <div class="product-icon-price">
+                            <span class="dollar-sign">$</span>
+                            <span class="dollar">99.</span>
+                            <span class="cents">00</span>
+                        </div>
+                    </div>
+                </div>
+                <span class="note red-note">20% OFF</span>
+            </li>
+            <li class="featured-products-image red" title="Featured product 2">
+                <img src="images/woman2.png" alt="image-2">
+                <div class="product-inf">
+                    <div class="product-description" title="">
+                        <p class="product-description-title">
+                            Product Title here
+                        </p>
+                        <p class="product-description-text">
+                            Short Description here
+                        </p>
+                    </div>
+                    <div class="product-icons">
+                        <div class="product-icon" title="Arrows">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                        <div class="product-icon" title="Whislost">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div class="product-icon" title="Add to cart">
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </div>
+                        <div class="product-icon-price">
+                            <span class="dollar-sign">$</span>
+                            <span class="dollar">99.</span>
+                            <span class="cents">00</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="featured-products-image blue" title="Featured product 3">
+                <img src="images/woman3.png" alt="image-3">
+                <div class="product-inf">
+                    <div class="product-description" title="">
+                        <p class="product-description-title">
+                            Product Title here
+                        </p>
+                        <p class="product-description-text">
+                            Short Description here
+                        </p>
+                    </div>
+                    <div class="product-icons">
+                        <div class="product-icon" title="Arrows">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                        <div class="product-icon" title="Whislost">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div class="product-icon" title="Add to cart">
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </div>
+                        <div class="product-icon-price">
+                            <span class="dollar-sign">$</span>
+                            <span class="dollar">99.</span>
+                            <span class="cents">00</span>
+                        </div>
+                    </div>
+                </div>
+                <span class="note blue-note">New</span>
+            </li>
+            <li class="featured-products-image red" title="Featured product 4">
+                <img src="images/woman4.png" alt="image-4">
+                <div class="product-inf">
+                    <div class="product-description" title="">
+                        <p class="product-description-title">
+                            Product Title here
+                        </p>
+                        <p class="product-description-text">
+                            Short Description here
+                        </p>
+                    </div>
+                    <div class="product-icons">
+                        <div class="product-icon" title="Arrows">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                        <div class="product-icon" title="Whislost">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div class="product-icon" title="Add to cart">
+                            <i class="fa-solid fa-shopping-cart"></i>
+                        </div>
+                        <div class="product-icon-price">
+                            <span class="dollar-sign">$</span>
+                            <span class="dollar">99.</span>
+                            <span class="cents">00</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
    
     <!--Часть Тани конец-->
