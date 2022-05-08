@@ -17,6 +17,7 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 a {
     text-decoration: none;
@@ -120,10 +121,13 @@ h2 {
     color: #ffffff;
 
     font-family: 'Lato', sans-serif;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 116px;
-    padding-top: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
     background-color: #05aecc;
     font-size: 16px;
     text-align: center;
@@ -1107,6 +1111,124 @@ i {
     background-color: #ffffff;
     color: #ef5966;
     border: 1px solid #ef5966;
+}
+
+.bg_layer {
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: relative;
+    background: #ffffff;
+    border-style: solid;
+    border-color: #ef5966;
+    border-width: 1px;
+    width: 300px;
+    height: 360px;
+    z-index: 30;
+    top: 50%;
+    transform: translate( 0%, -50%);
+}
+
+.headerstext {
+    display: flex;
+    align-self: flex-end;
+    color: #05aecc;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.headeregister{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-width: 0px;
+    border-bottom: 1px;
+    border-color: #ef5966;
+    border-style: solid;
+    padding: 15px;
+}
+
+.exit {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #ffffff;
+    background-color: #ef5966;
+    cursor: pointer;
+}
+
+.exit:hover {
+    background-color: #ffffff;
+    color: #ef5966;
+    border: 1px solid #ef5966;
+}
+
+.textregister {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ef5966;
+}
+
+.inputregister {
+    margin-left: 15px;
+    border-color: #ef5966;
+    width: 270px;
+}
+
+.send {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #ffffff;
+    background-color: #05aecc;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.send:hover {
+    background-color: #ffffff;
+    color: #05aecc;
+    border: 1px solid #05aecc;
+}
+
+.success {
+    position: relative;
+    background: #ffffff;
+    border-style: solid;
+    border-color: #ef5966;
+    border-width: 1px;
+    width: 420px;
+    height: 60px;
+    z-index: 30;
+    top: 50%;
+    transform: translate( 0%, -50%);
+}
+
+.send:disabled {
+    background-color: #676767;
+    color: #ffffff;
+    border: 1px solid #676767;
 }
 
 /*стили Максима конец*/
