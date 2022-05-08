@@ -114,7 +114,7 @@ function validinput() {
     Name = Name.trim()
     Email = Email.trim()
     Phone = Phone.trim()
-    if ((/[a-zA-Z_ ]{1,20}/.test(Name))&&(/[a-z.A-Z]+@[a-z.A-Z]+\.[a-z.A-Z]+/.test(Email))&&(/^\+(\d){10,14}$/.test(Phone))) {//
+    if ((/[a-zA-Z_ 0-9]{1,20}/.test(Name))&&(/[a-z.A-Z]+@[a-z.A-Z]+\.[a-z.A-Z]+/.test(Email))&&(/^\+(\d){10,14}$/.test(Phone))) {//
         document.getElementById('Send').disabled = false
     } else {
         document.getElementById('Send').disabled = true
