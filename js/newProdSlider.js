@@ -13,7 +13,7 @@ function addNewProductsSlider(sliderWidth, sliderHeight, parentElement, classNam
     slider.style.width = sliderWidth;
     slider.style.height = sliderHeight;
     slider.className = className;
-    slider.style.transition = 'all ease 1s';
+    slider.style.transition = 'all ease 0.5s';
     slider.className = "new-products-images";
 
     sliderContainer.appendChild(slider);
