@@ -1,6 +1,7 @@
 function addNewProductsSlider(sliderWidth, sliderHeight, parentElement, className)
 {
-    let sliderContainer = addDivElement(parentElement, "slider_container", "");
+    let sliderContainer = document.createElement('div');
+    sliderContainer.className = "slider_container";
     sliderContainer.style.width = sliderWidth;
     sliderContainer.style.height = sliderHeight;
     sliderContainer.style.overflow = 'hidden';
@@ -13,11 +14,10 @@ function addNewProductsSlider(sliderWidth, sliderHeight, parentElement, classNam
     slider.style.width = sliderWidth;
     slider.style.height = sliderHeight;
     slider.className = className;
-    slider.style.transition = 'all ease 0.5s';
+    slider.style.transition = 'all ease 1s';
     slider.className = "new-products-images";
 
     sliderContainer.appendChild(slider);
-
     return slider;
 }
 
@@ -104,27 +104,27 @@ function addButtons(parentElement)
 }
 
 function addDivElement(parent, className, title) {
-    let iElement = document.createElement('div');
-    iElement.className = className;
+    let divElement = document.createElement('div');
+    divElement.className = className;
     if(title !== "") {
-        iElement.title = title;
+        divElement.title = title;
     }
-    parent.appendChild(iElement);
-    return iElement;
+    parent.appendChild(divElement);
+    return divElement;
 }
 
 function addSpanElement(parent, className, text, title) {
-    let iElement = document.createElement('span');
-    iElement.className = className;
+    let spanElement = document.createElement('span');
+    spanElement.className = className;
     if(title !== "") {
-        iElement.title = title;
+        spanElement.title = title;
     }
-    iElement.textContent = text;
+    spanElement.textContent = text;
     if(parent !== "")
     {
-        parent.appendChild(iElement);
+        parent.appendChild(spanElement);
     }
-    return iElement;
+    return spanElement;
 }
 
 function addIElement(parent, className) {
@@ -197,7 +197,7 @@ right_arrow.onclick = function () {
         currOffset = offset*count;
 
         sliderCentralElement++;
-        
+
         blackParent = searchBlack(sliderElements[1][sliderCentralElement]);
         slide(slider, central_buttons, blackParent, currOffset);
     }
