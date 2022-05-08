@@ -723,7 +723,7 @@ input {
 .new-products-center-image {
     position: relative;
 }*/
-.featured-products-images {
+#featured-products-images {
     display: flex;
     justify-content: space-between;
     width: 1170px;
