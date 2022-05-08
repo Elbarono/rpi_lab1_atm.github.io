@@ -882,7 +882,7 @@ i {
 .product-inf{
     display: flex;
     flex-direction: column;
-    width: 270px;
+    width: 100%;
     background-color: white;
 }
 .product-description{
