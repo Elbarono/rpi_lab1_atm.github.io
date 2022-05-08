@@ -175,7 +175,7 @@ right_arrow.onclick = function () {
     }
 }
 left_arrow.onclick = function () {
-    if(count !== 0) {
+    if(count > 0) {
         count--;
         currOffset = offset*count;
         sliderCentralElement--;
