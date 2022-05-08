@@ -12,7 +12,6 @@ function addNewProductsSlider(sliderWidth, sliderHeight, parentElement, classNam
     slider.style.justifyContent = 'space-between';
     slider.style.width = sliderWidth;
     slider.style.height = sliderHeight;
-    //slider.style.overflow = 'hidden';
     slider.className = className;
     slider.style.transition = 'all ease 1s';
     slider.className = "new-products-images";
@@ -66,12 +65,22 @@ function addToNewProductsSlider(slider, imageWidth, imageUrl) {
     sliderElement.style.minWidth = imageWidth;
     sliderElement.style.height = '100%';
     sliderElement.className = 'slider_element';
-
-    sliderElement.style.display = 'flex';
-    sliderElement.style.alignItems = 'center';
-    sliderElement.style.justifyContent = 'center';
-
     slider.appendChild(sliderElement);
+
+    let blackBackground = document.createElement('div');
+    blackBackground.style.backgroundColor = 'black';
+    blackBackground.style.width = '100%';
+    blackBackground.style.height = '100%';
+    blackBackground.className = 'black_background';
+    blackBackground.style.transition = 'background-color 0.5s';
+
+    blackBackground.style.display = 'flex';
+    blackBackground.style.alignItems = 'center';
+    blackBackground.style.justifyContent = 'center';
+
+    blackBackground.style.backgroundColor = 'transparent';
+    sliderElement.appendChild(blackBackground);
+
     return sliderElement;
 }
 function addButtons(parentElement)
@@ -91,9 +100,6 @@ function addButtons(parentElement)
     addSpanElement(element, "dollar-sign", "$", "");
     addSpanElement(element, "dollar", "99.", "");
     addSpanElement(element, "cents", "00", "");
-    //
-    //subElement.style.transition = 'all ease 1s';
-    //
     return subElement;
 }
 
@@ -127,14 +133,27 @@ function addIElement(parent, className) {
     parent.appendChild(iElement);
     return iElement;
 }
-function slide(slider, central_buttons, sliderCentralElement, offset) {
+
+
+function slide(slider, central_buttons, blackParent, offset) {
 
     central_buttons.remove();
     slider.style.transform = 'translate(-'+offset+'px)';
     slider.ontransitionend = function () {
-        sliderCentralElement.appendChild(central_buttons);
+        blackParent.style.backgroundColor = 'rgba(54, 42, 79, 0.85)';
+        blackParent.appendChild(central_buttons);
     }
 }
+function searchBlack(sliderCentralElement) {
+    let children = sliderCentralElement.childNodes;
+    let i = 0;
+    while(i < children.length && children[i].className !== 'black_background')
+    {
+        i++;
+    }
+    return children[i];
+}
+
 let right_arrow = document.getElementById("new_products_header_right_arrow");
 let left_arrow = document.getElementById("new_products_header_left_arrow");
 
@@ -144,8 +163,8 @@ const sliderWidth = '1170px';
 const sliderHeight = '200px';
 const visibleNumber = 3;
 const imageWidth = '370px';
-const imagesUrls = ["images/new_prod1.png" ,"images/new_prod2.png","images/new_prod3.png",
-                    "images/new_prod1.png" ,"images/new_prod2.png","images/new_prod3.png"];
+const imagesUrls = ["images/new_prod1.png" ,"images/new_prod22.png","images/new_prod3.png",
+                    "images/new_prod1.png" ,"images/new_prod22.png","images/new_prod3.png"];
 
 
 const slider = addNewProductsSlider(sliderWidth, sliderHeight, parentElement, sliderClass)
@@ -153,7 +172,10 @@ let sliderElements = manageSliderElements(slider, imageWidth, imagesUrls, visibl
 
 let count = 0;
 let sliderCentralElement = Math.floor(visibleNumber/2);
-let central_buttons = addButtons(sliderElements[1][sliderCentralElement]);
+
+let blackParent = searchBlack(sliderElements[1][sliderCentralElement]);
+blackParent.style.backgroundColor = 'rgba(54, 42, 79, 0.85)';
+let central_buttons = addButtons(blackParent);
 
 let offset =  sliderElements[1][0].offsetWidth;
 if(visibleNumber === 1)
@@ -168,17 +190,29 @@ let currOffset = offset;
 
 right_arrow.onclick = function () {
     if(count + visibleNumber !== imagesUrls.length) {
+        blackParent = searchBlack(sliderElements[1][sliderCentralElement]);
+        blackParent.style.background = 'transparent';
+
         count++;
-        sliderCentralElement++;
         currOffset = offset*count;
-        slide(slider, central_buttons, sliderElements[1][sliderCentralElement], currOffset);
+
+        sliderCentralElement++;
+        
+        blackParent = searchBlack(sliderElements[1][sliderCentralElement]);
+        slide(slider, central_buttons, blackParent, currOffset);
     }
 }
 left_arrow.onclick = function () {
     if(count > 0) {
+        blackParent = searchBlack(sliderElements[1][sliderCentralElement]);
+        blackParent.style.backgroundColor = 'transparent';
+
         count--;
         currOffset = offset*count;
+
         sliderCentralElement--;
-        slide(slider, central_buttons, sliderElements[1][sliderCentralElement], currOffset);
+
+        blackParent = searchBlack(sliderElements[1][sliderCentralElement]);
+        slide(slider, central_buttons, blackParent, currOffset);
     }
 }
