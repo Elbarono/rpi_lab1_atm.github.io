@@ -1,30 +1,31 @@
-let right_arrow = document.getElementById("new_products_header_right_arrow");
-let left_arrow = document.getElementById("new_products_header_left_arrow");
-right_arrow.onclick = function () {
-    alert('right arrow clicked!');
-}
-left_arrow.onclick = function () {
-    alert('left arrow clicked!');
-}
-function lazyAddSlider(sliderId, sliderWidth, visibleNumber, sliderHeight, imageWidth, imagesUrls, parentId) {
-    addNewProductsSlider(sliderId, sliderWidth, sliderHeight, parentId);
-    manageSliderElements(sliderId, imageWidth, imagesUrls, visibleNumber);
-}
-function addNewProductsSlider(sliderId, sliderWidth, sliderHeight, parentId)
+function addNewProductsSlider(sliderWidth, sliderHeight, parentElement, className)
 {
+    let sliderContainer = addDivElement(parentElement, "slider_container", "");
+    sliderContainer.style.width = sliderWidth;
+    sliderContainer.style.height = sliderHeight;
+    sliderContainer.style.overflow = 'hidden';
+    parentElement.appendChild(sliderContainer);
+
     let slider = document.createElement('div');
-    slider.setAttribute('id', sliderId);
-    //adding styles to slider
+
     slider.style.display = 'flex';
     slider.style.justifyContent = 'space-between';
     slider.style.width = sliderWidth;
     slider.style.height = sliderHeight;
-    document.getElementById(parentId).appendChild(slider);
+    //slider.style.overflow = 'hidden';
+    slider.className = className;
+    slider.style.transition = 'all ease 1s';
+    slider.className = "new-products-images";
+
+    sliderContainer.appendChild(slider);
+
+    return slider;
 }
-//
-function manageSliderElements(sliderId, imageWidth, imagesUrls, visibleNumber) {
+
+function manageSliderElements(slider, imageWidth, imagesUrls, visibleNumber) {
     let sliderElements = [[], []];
     let differenceNumber = visibleNumber - imagesUrls.length;
+
     for(let i = 0; i < differenceNumber; i++)
     {
         imagesUrls.push(imagesUrls[i]);
@@ -33,30 +34,45 @@ function manageSliderElements(sliderId, imageWidth, imagesUrls, visibleNumber) {
     for(let i = 0;  i < imagesNum; i++) {
         sliderElements[0].push(imagesUrls[i]);
     }
-
-    let centralImageNumber = Math.floor(visibleNumber/2);
     for(let i = 0; i < imagesNum; i++)
     {
-        sliderElements[1].push(addToNewProductsSlider(sliderId, imageWidth, imagesUrls[i]));
+        sliderElements[1].push(addToNewProductsSlider(slider, imageWidth, imagesUrls[i]));
+    }
+    let margin_right;
+    let margin_left;
+    if(visibleNumber !== 1)
+    {
+        margin_right = `${Math.floor((slider.offsetWidth - sliderElements[1][0].offsetWidth*visibleNumber)/(visibleNumber - 1))}px`;
+        margin_left = "0";
+    }
+    else
+    {
+        margin_right = `${Math.floor((slider.offsetWidth - sliderElements[1][0].offsetWidth)/2)}px`;
+        margin_left = margin_right;
+    }
+    for(let i = 0; i < imagesNum; i++)
+    {
+        sliderElements[1][i].style.marginRight = margin_right;
+        sliderElements[1][i].style.marginLeft = margin_left;
     }
 
-    manageCentralImage(sliderElements[1][centralImageNumber]);
+    return sliderElements;
 }
 
-function addToNewProductsSlider(sliderId, imageWidth, imageUrl) {
+function addToNewProductsSlider(slider, imageWidth, imageUrl) {
+
     let sliderElement = document.createElement('div');
     sliderElement.style.backgroundImage = `url('${imageUrl}')`;
-    sliderElement.style.width = imageWidth;
-    document.getElementById(sliderId).appendChild(sliderElement);
-    return sliderElement;
-}
-function manageCentralImage(sliderCentralElement)
-{
-    sliderCentralElement.style.display = 'flex';
-    sliderCentralElement.style.alignItems = 'center';
-    sliderCentralElement.style.justifyContent = 'center';
+    sliderElement.style.minWidth = imageWidth;
+    sliderElement.style.height = '100%';
+    sliderElement.className = 'slider_element';
 
-    addButtons(sliderCentralElement);
+    sliderElement.style.display = 'flex';
+    sliderElement.style.alignItems = 'center';
+    sliderElement.style.justifyContent = 'center';
+
+    slider.appendChild(sliderElement);
+    return sliderElement;
 }
 function addButtons(parentElement)
 {
@@ -75,6 +91,10 @@ function addButtons(parentElement)
     addSpanElement(element, "dollar-sign", "$", "");
     addSpanElement(element, "dollar", "99.", "");
     addSpanElement(element, "cents", "00", "");
+    //
+    //subElement.style.transition = 'all ease 1s';
+    //
+    return subElement;
 }
 
 function addDivElement(parent, className, title) {
@@ -94,7 +114,10 @@ function addSpanElement(parent, className, text, title) {
         iElement.title = title;
     }
     iElement.textContent = text;
-    parent.appendChild(iElement);
+    if(parent !== "")
+    {
+        parent.appendChild(iElement);
+    }
     return iElement;
 }
 
@@ -106,6 +129,55 @@ function addIElement(parent, className) {
 }
 
 
-function SwapBackgroundImage(direction) {
+function slide(slider, central_buttons, sliderCentralElement, offset) {
 
+    slider.style.transform = 'translate(-'+offset+'px)';
+    sliderCentralElement.appendChild(central_buttons);
+}
+let right_arrow = document.getElementById("new_products_header_right_arrow");
+let left_arrow = document.getElementById("new_products_header_left_arrow");
+
+const parentElement = document.getElementById("new-products");
+const sliderClass = "new-products-slider";
+const sliderWidth = '1170px';
+const sliderHeight = '200px';
+const visibleNumber = 3;
+const imageWidth = '370px';
+const imagesUrls = ["images/new_prod1.png" ,"images/new_prod2.png","images/new_prod3.png",
+                    "images/new_prod1.png" ,"images/new_prod2.png","images/new_prod3.png"];
+
+
+const slider = addNewProductsSlider(sliderWidth, sliderHeight, parentElement, sliderClass)
+let sliderElements = manageSliderElements(slider, imageWidth, imagesUrls, visibleNumber);
+
+let count = 0;
+let sliderCentralElement = Math.floor(visibleNumber/2);
+let central_buttons = addButtons(sliderElements[1][sliderCentralElement]);
+
+let offset =  sliderElements[1][0].offsetWidth;
+if(visibleNumber === 1)
+{
+    offset += slider.offsetWidth - sliderElements[1][0].offsetWidth;
+}
+else
+{
+    offset += Math.floor((slider.offsetWidth - sliderElements[1][0].offsetWidth*visibleNumber)/(visibleNumber - 1));
+}
+let currOffset = offset;
+
+right_arrow.onclick = function () {
+    if(count + visibleNumber !== imagesUrls.length) {
+        count++;
+        sliderCentralElement++;
+        currOffset = offset*count;
+        slide(slider, central_buttons, sliderElements[1][sliderCentralElement], currOffset);
+    }
+}
+left_arrow.onclick = function () {
+    if(count !== 0) {
+        count--;
+        currOffset = offset*count;
+        sliderCentralElement--;
+    }
+    slide(slider, central_buttons, sliderElements[1][sliderCentralElement], currOffset);
 }
