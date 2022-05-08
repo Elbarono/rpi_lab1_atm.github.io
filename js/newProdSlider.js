@@ -179,6 +179,6 @@ left_arrow.onclick = function () {
         count--;
         currOffset = offset*count;
         sliderCentralElement--;
+        slide(slider, central_buttons, sliderElements[1][sliderCentralElement], currOffset);
     }
-    slide(slider, central_buttons, sliderElements[1][sliderCentralElement], currOffset);
 }
